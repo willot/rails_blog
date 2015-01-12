@@ -1,0 +1,11 @@
+<h1> Welcome to my first blog made with Ruby on Rails  </h1>
+
+<ul>
+	<% Post.all.each do |post| %>
+	<li>
+	<h4><%= post.title %></h4>
+	<%= post.content %>
+	<h6><%= post.user.pseudo %></h6>
+	</li>
+	<% end %>
+</ul>	

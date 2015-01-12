@@ -1,0 +1,9 @@
+Login page
+
+<%= form_for (:sessions) do |f| %>
+<%= f.label :pseudo %>
+<%= f.text_field :pseudo, placeholder:"Enter your pseudo" %>
+<%= f.label :password %>
+<%= f.password_field :password, placeholder:"Enter your password" %>
+<%= f.submit "Submit"%>
+<%end%>

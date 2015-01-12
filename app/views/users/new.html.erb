@@ -1,0 +1,14 @@
+this page is to create a new user 
+
+<%= form_for @user do |f| %>
+	<%= f.label :pseudo %>
+	<%= f.text_field :pseudo, placeholder:"pseudo" %>
+	<%= f.label :email %>
+	<%= f.text_field :email, placeholder:"pseudo" %>
+	<%= f.label :password %>
+	<%= f.password_field :password, placeholder:"Put you text in here" %>
+	<%= f.label :password_confirmation, "Confirm your password" %>
+	<%= f.password_field :password_confirmation, placeholder:"confirm your password" %>
+	<%= f.submit "Submit"%>
+<%end%>
+
